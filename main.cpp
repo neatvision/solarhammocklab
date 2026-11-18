@@ -35,18 +35,37 @@ void digit_product() {
     (void)product;
 }
 
+void greatest_divisor() {
+    int a = 48, b = 18;
+    while (b != 0) {
+        int t = a % b;
+        a = b;
+        b = t;
+    }
+    (void)a;
+}
+
+void swap_values() {
+    int a = 5, b = 11;
+    int tmp = a;
+    a = b;
+    b = tmp;
+    (void)a;
+    (void)b;
+}
+
 extern "C" int subtle_hollow();
-extern void frost_kite();
-extern void serene_lantern();
-extern void ivory_prism();
+extern void cedar_signal();
+extern void radiant_beacon();
 
 int main() {
     collect_triples();
     is_prime();
     geometric_sum();
     digit_product();
-    frost_kite();
-    serene_lantern();
-    ivory_prism();
+    greatest_divisor();
+    swap_values();
+    cedar_signal();
+    radiant_beacon();
     return subtle_hollow();
 }
